@@ -79,7 +79,7 @@ public class Crawler {
 		exhibition.put("month", dateStr.substring(5, 7));
 		exhibition.put("year", dateStr.substring(0, 4));
 		
-        //time
+		//time
 		Elements time = d.select("div.fair-detailtime-info");
 		exhibition.put("startTime", time.select("span.start_time").text());
 		exhibition.put("endTime", time.select("span.end_time").text());
